@@ -1,0 +1,10 @@
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: env-overrides
+  namespace: openshift-sdn
+data:
+  _master: |
+    OPENSHIFT_SDN_LOG_LEVEL=5
+  ci-ln-1x8tmr2-c1627-qxcqj-worker-jswk6: |
+    OPENSHIFT_SDN_LOG_LEVEL=5
